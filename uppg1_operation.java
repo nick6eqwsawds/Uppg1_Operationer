@@ -50,6 +50,20 @@ public class uppg1_operation {
             } else if (talen[0]==talen[1]&&talen[0]!=talen[2]){
                 System.out.println("Första talet är samma som andra men inte samma som tredje talet");
             }
+
+            System.out.println("Skriv ett tal för att testa");
+            int gissning = tangentbord.nextInt();
+            int orginal=gissning;
+
+            gissning+=7;
+            gissning*=2;
+            gissning-=6;
+            gissning/=2;
+            gissning+=3;
+            gissning-=orginal;
+
+            System.out.println(gissning+" är ditt tal?");
+
         }
     }
     
