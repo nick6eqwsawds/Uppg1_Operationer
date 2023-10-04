@@ -25,6 +25,31 @@ public class uppg1_operation {
             } else {
                 System.out.println("Ditt första heltal är inte större än det andra!");
             }
+
+            int[] talen = {4,5,2};
+            if (talen[0]>talen[1]&&talen[0]>talen[2]){
+                System.out.println("Första talet är större än det andra talen");
+            } else if (talen[0]>talen[1]&&talen[0]<talen[2]){
+                System.out.println("Första talet är större än andra talet men inte tredje");
+            } else if (talen[0]<talen[1]&&talen[0]>talen[2]){
+                System.out.println("Första talet är mindre än andra talet men större än tredje talet");
+            }
+
+            if (talen[0]<talen[1]&&talen[0]<talen[2]){
+                System.out.println("Första talet är mindre än det andra talen");
+            } else if (talen[0]<talen[1]&&talen[0]>talen[2]){
+                System.out.println("Första talet är mindre än andra talet men större än tredje talet");
+            } else if (talen[0]>talen[1]&&talen[0]<talen[2]){
+                System.out.println("Första talet är större än andra talet men mindre än tredje talet");
+            }
+
+            if (talen[0]==talen[1]&&talen[0]==talen[2]){
+                System.out.println("Första talet är samma som de andra talen");
+            } else if (talen[0]!=talen[1]&&talen[0]==talen[2]){
+                System.out.println("Första talet är inte samma som andra men samma som tredje talet");
+            } else if (talen[0]==talen[1]&&talen[0]!=talen[2]){
+                System.out.println("Första talet är samma som andra men inte samma som tredje talet");
+            }
         }
     }
     
